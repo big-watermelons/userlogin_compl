@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Forms</title>
+</head>
+<body>
+<h1>Forms</h1>
+<table>
+  <thead>
+  <tr>
+
+
+  </tr>
+  </thead>
+  <tbody>
+  <tr th:each="user_info : ${form}">
+    <td th:text="${user_info.username}"></td>
+    <td th:text="${user_info.password}"></td>
+    <!-- 其他表单字段 -->
+  </tr>
+  </tbody>
+</table>
+</body>
+</html>
